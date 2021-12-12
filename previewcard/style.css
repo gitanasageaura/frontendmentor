@@ -1,0 +1,151 @@
+html {
+    box-sizing:border-box;
+    font-size: 100%;
+}
+
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+.sr-only{
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+font-family: 'Big Shoulders Display', cursive;
+font-weight: 700;
+color: hsl(0, 0%, 95%);
+padding: 10px 20px;
+text-transform: uppercase;
+}
+
+p {
+font-family: 'Lexend Deca', sans-serif;
+font-size: 15px;
+color:hsla(0, 0%, 95%, 0.795);
+padding: 10px 20px;
+text-align: left;
+margin-bottom: 50px;
+}
+
+.box {
+width: 840px;
+border: 1px solid white;
+border-radius: 10px;
+padding: 0px;
+position:relative;
+display: flex;
+}
+
+.button {
+font-family: 'Lexend Deca', sans-serif;
+font-size: 15px;
+text-align: center;
+padding: 10px;
+border-radius: 30px;
+margin: 60px 30px 0px 20px;
+width: 150px;
+transition-duration: 0.4s;
+text-decoration: none;
+cursor: pointer;
+}
+.buttonsedan:hover {
+background-color: hsl(31, 77%, 52%);
+color: hsl(0, 0%, 95%);
+border: 1px solid hsl(0, 0%, 95%);
+}
+
+.buttonsedan{
+background-color: #ffffff;
+color: hsl(31, 77%, 52%);
+border: none;
+}
+
+.buttonsuv:hover {
+background-color: hsl(184, 100%, 22%);
+color: hsla(0, 0%, 95%, 0.795);
+border: 1px solid hsl(0, 0%, 95%);
+}
+
+.buttonsuv {
+background-color:#ffffff;
+color: hsl(184, 100%, 22%);
+border: none;
+}
+
+.buttonluxury:hover{
+background-color: hsl(179, 100%, 13%);
+color: hsla(0, 0%, 95%, 0.795);
+border: 1px solid hsl(0, 0%, 95%);
+}
+
+.buttonluxury {
+background-color:#ffffff;
+color: hsl(179, 100%, 13%);
+border: none;
+}
+
+.container {
+width: 250px;
+height: 450px;
+padding: 20px;
+position: static;
+}
+
+.sedanimg, .suvimg, .luxuryimg{
+padding: 20px 20px 10px 20px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv {
+background-color: hsl(184, 100%, 22%);
+
+}
+
+.luxury {
+background-color: hsl(179, 100%, 13%);
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+footer{
+    position: static;
+    bottom: 0%;
+    width: 100%;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:850px) {
+    .box, .sedan, .luxury, .suv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0%;
+    }
+    }
